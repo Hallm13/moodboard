@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #f0f0f0;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+header {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  /* grid-template-rows: repeat(10, 1fr); */
+}
+
+.primebanner {
+  background-image:url(images/primebanner.svg);
+  width: 100%;
+  min-height: 250px;
+  height: 50vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* grid-column: span 2; */
+  grid-row: 1;
+}
+
+.secondarybanner {
+  background-image: url(images/secondarybanner.svg);
+  width: 25vw;
+  /* min-height: 200px; */
+  height: 35vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* grid-column: 8 / span 2; */
+  grid-row: 1;
+  justify-self: end;
+}
+
+.primebanner h1 {
+  grid-column: 2;
+}
