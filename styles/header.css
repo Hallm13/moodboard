@@ -8,8 +8,8 @@ body {
   font-family: 'Rubik', sans-serif;
   height: 100vh;
   display: grid;
-  grid-template-columns: 1fr minmax(300px,4fr) 1fr 3fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr minmax(5fr,150px) 5fr;
+  grid-template-columns: 1fr minmax(200px,4fr) 1fr 3fr 1fr;
+  grid-template-rows: 1fr 1.5fr 1fr 1fr 5fr 5fr;
 
 }
 
@@ -31,7 +31,7 @@ body:after {
   content: '';
   background-image:url(images/primebanner.svg);
   /* width: 100%; */
-  min-width: 250px;
+  min-width: 300px;
   /* height: 100%; */
   background-size: contain;
   background-repeat: no-repeat;
@@ -60,21 +60,24 @@ nav a {
 
 h1 {
   grid-column: 2;
-  grid-row: 3;
+  grid-row: 2;
+  align-self: center;
+  margin-bottom: 50px;
 }
 
 .intro {
   grid-column: 2;
-  grid-row: 5;
+  grid-row: 3;
+  align-self: start;
 }
 
 h1, .intro {
   z-index: 3;
   color: #ffff;
-  font-size: 2vw;
-  letter-spacing: 0.09vw;
+  font-size: 4vw;
+  letter-spacing: 0.1vw;
   font-weight: 500;
-  line-height: 3vw;
+  line-height: 5vw;
 }
 
 logo {
@@ -85,4 +88,14 @@ logo {
   grid-row: 1;
   z-index: 2;
   align-self: center;
+}
+
+@media screen and (min-width: 700px) {
+  h1, .intro {
+    font-size: 2vw;
+    letter-spacing: 0.2vw;
+    font-weight: 500;
+    line-height: 2.5vw;
+  }
+
 }
