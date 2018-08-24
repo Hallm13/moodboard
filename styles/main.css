@@ -38,15 +38,15 @@ img {
   /* border: 3vw solid gray; */
 }
 
-li:nth-child(1) {
+li:nth-child(3n+1) {
   grid-column: span 2;
 }
 
-li:nth-child(6) {
+li:nth-child(3n+3) {
   grid-column: span 2;
 }
 
-li:nth-child(7) {
+li:nth-child(3n+3) {
   grid-column: span 2;
 }
 
